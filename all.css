@@ -1,0 +1,55 @@
+/* #region ===== 配色パレット ここから ===== */
+:root {
+    /* メイン */
+    --color-main-dark: #a1a1a1;
+    --color-main: #BFBFBF;
+    --color-main-light: #dddddd;
+    /* アクセント */
+    --color-accent-red: rgb(168, 28, 28);
+    --color-accent-blue:  rgb(10, 18, 92);
+    /* 背景 */
+    --color-base: #d1d1d1;
+    /* 白黒 */
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+/* #endregion ===== 配色パレット ここまで ===== */
+
+.home-button {
+    background: var(--color-main-dark);
+    width: 120px;
+    height: 20px;
+    margin-left: 50px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    /* 縦中央 */
+    justify-content: center;
+    /* 横中央 */
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.home-button:active {
+    transform: scale(0.9);
+}
+
+/* ===== ヘッダー・フッター ===== */
+.header {
+    background: var(--color-black);
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+
+.footer {
+    background: var(--color-black);
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0px;
+}

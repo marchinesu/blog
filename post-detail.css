@@ -1,0 +1,100 @@
+/* #region ===== 配色パレット ここから ===== */
+:root {
+    /* メイン */
+    --color-main-dark: #a1a1a1;
+    --color-main: #BFBFBF;
+    --color-main-light: #dddddd;
+    /* アクセント */
+    --color-accent-red: rgb(168, 28, 28);
+    --color-accent-blue:  rgb(10, 18, 92);
+    /* 背景 */
+    --color-base: #d1d1d1;
+    /* 白黒 */
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+/* #endregion ===== 配色パレット ここまで ===== */
+
+/* ===== 基本 ===== */
+
+
+
+/* ===== 記事全体 ===== */
+
+.post-header,
+h2,
+p,
+hr,
+.post-content {
+    width: calc(100% - 100px);
+    margin: 40px auto 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.post-header {
+    margin: 30px auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    margin: 0;
+}
+
+h2 {
+    margin: 0 auto 15px;
+}
+
+p {
+    margin: 0 auto 15px;
+    color: var(--color-main-dark);
+}
+
+hr {
+    margin: 20px auto;
+    border: none;
+    border-top: 1px solid var(--color-main-light);
+}
+
+/* ===== 本文 ===== */
+.post-content {
+    width: calc(100% - 150px);
+    margin: 0 auto 50px;
+    background: var(--color-white);
+    padding: 20px;
+    border: 1px solid var(--color-main-light);
+}
+
+/* 編集ボタン */
+.edit-button {
+    display: flex;
+    flex-direction: row;
+    /* 念のため明示 */
+    gap: 12px;
+}
+
+.edit-button a {
+    color: var(--color-black);
+    text-decoration: none;
+    white-space: nowrap;
+    /* 改行防止 */
+}
+
+/* コメントボタン */
+.comment-button {
+    text-align: center;
+    margin: 30px 0 15px;
+}
+
+.comment-button a {
+    color: var(--color-accent-blue);
+    text-decoration: none;
+}
+
+.home-button {
+    text-align: center;
+}

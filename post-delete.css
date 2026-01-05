@@ -1,0 +1,75 @@
+h3 {
+    text-align: center;
+}
+
+
+
+
+/* #region ===== ゴミ箱 ここから ===== */
+
+
+.trash-wrap {
+    display: flex;
+    gap: 40px;
+    /* ゴミ箱同士の間隔 */
+    justify-content: center;
+}
+
+
+.trash-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+
+/* 本体 */
+.trash-body {
+
+    width: 100%;
+    height: 100%;
+    background: var(--color-white);
+    border-radius: 10px;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+/* ふた */
+.trash-lid {
+    width: 100%;
+    height: 40px;
+    background: var(--color-accent);
+    border-radius: 10px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: right bottom;
+    transition: transform 0.8s ease;
+    z-index: 3;
+}
+
+/* 開いた状態（gift-open 相当） */
+.trash-container:hover .trash-lid {
+    transform: translate(-40px, -10px) rotateZ(20deg) scale(1.07);
+}
+
+.trash-yes,
+.trash-no {
+    position: absolute;
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: auto;
+
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+/* #endregion ===== ゴミ箱 ここまで ===== */

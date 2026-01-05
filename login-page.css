@@ -1,0 +1,145 @@
+/* #region ===== 配色パレット ここから ===== */
+:root {
+    /* メイン */
+    --color-main-dark: #a1a1a1;
+    --color-main: #BFBFBF;
+    --color-main-light: #dddddd;
+    /* アクセント */
+    --color-accent-red: rgb(168, 28, 28);
+    --color-accent-blue:  rgb(10, 18, 92);
+    /* 背景 */
+    --color-base: #d1d1d1;
+    /* 白黒 */
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+/* #endregion ===== 配色パレット ここまで ===== */
+
+body {
+    margin: 0px;
+}
+
+/* ログインタイトル */
+.formTitle {
+    font-weight: bold;
+    color: var(--color-accent-blue);
+    text-align: center;
+    font-size: 26px;
+    margin: 100px auto 20px;
+    padding-bottom: 10px;
+    width: 420px;
+}
+
+/* ===== ログインフォーム ===== */
+form {
+    width: 600px;
+
+    margin: 20px auto;
+    margin-bottom: 20px;
+    padding: 40px;
+    background-color: var(--color-accent-blue);
+    box-sizing: border-box;
+
+    color: var(--color-white);
+    display: block;
+    text-align: left;
+    line-height: 2.0;
+    font-size: 16px;
+}
+
+/* ページごとの高さ調整 */
+
+.login-page form {
+    min-height: 600px;
+}
+
+.simple-login-page form {
+    min-height: 450px;
+}
+
+/* 入力欄 */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 38px;
+    margin: 8px 0 0 0;
+    padding: 5px 10px;
+    border: none;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* ログインボタン */
+input[type="submit"] {
+    display: block;
+    width: 180px;
+    margin: 30px auto 0;
+    padding: 10px;
+    background-color: var(--color-accent-red);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    /* 角を丸くする */
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.85;
+}
+
+/* 新規登録リンク */
+.newUser {
+    display: block;
+    text-align: center;
+    margin: 30px auto 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.newUser a:hover {
+    text-decoration: underline;
+}
+
+/* 入力完了時 */
+.login-success {
+    color: #003ba8;
+    background: #e5f0ff;
+    border: 1px solid #000ba8;
+    padding: 12px;
+    width: 420px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.login-error {
+    color: #a80000;
+    background: #ffe5e5;
+    border: 1px solid #a80000;
+    padding: 12px;
+    width: 420px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.flash-success {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.login-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}

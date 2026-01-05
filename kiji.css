@@ -1,0 +1,95 @@
+/* 全体の型枠 */
+.post-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 内側 */
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* タイトル（pタグ対応） */
+.post-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* フォーム（class="label" を活かす） */
+form.label {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* input / textarea 共通 */
+form.label input[type="text"],
+form.label textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* textarea調整 */
+form.label textarea {
+    resize: vertical;
+}
+
+/* h4（本文見出し） */
+form.label h4 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+/* 投稿ボタン */
+.submit-btn {
+    width: 150px;
+    margin: 20px auto 0;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* 入力完了時 */
+.submit-success {
+    color: #003ba8;
+    background: #e5f0ff;
+    border: 1px solid #000ba8;
+    padding: 12px;
+    width: 420px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.submit-error {
+    color: #a80000;
+    background: #ffe5e5;
+    border: 1px solid #a80000;
+    padding: 12px;
+    width: 420px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 6px;
+}
+
